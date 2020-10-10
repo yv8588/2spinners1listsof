@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     ListView city;
     TextView citnum, land;
     String choose = "Asia";
-    String[] a=new String[5];
+    String choosec="Israel";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +83,34 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+ switch (choosec) {
+     case "Israel": {
+         break;
+     }
+     case "Japan": {
+         break;
+     }
+     case "China": {
+         break;
+     }
+     case "Cambodia": {
+         break;
+     }
+     case "Cyprus": {
+         break;
+     }
+
+     case "Turkey": {
+         break;
+     }
+
+     case "India": {
+
+     }// all asia countries
+ }
+
+
+ }
 
     }
 
@@ -123,35 +151,42 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     case 0: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Israel"));
                         city.setAdapter(adpl);
+                        choosec="Israel";
                         break;
                     }
                     case 1: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Japan"));
                         city.setAdapter(adpl);
+                        choosec="Japan";
                         break;
                     }
                     case 2: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("China"));
                         city.setAdapter(adpl);
+                        choosec="China";
                         break;
                     }
                     case 3: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Cambodia"));
                         city.setAdapter(adpl);
+                        choosec="Cambodia";
                     }
                     case 4: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Cyprus"));
                         city.setAdapter(adpl);
+                        choosec="Cyprus";
                         break;
                     }
                     case 5: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Turkey"));
                         city.setAdapter(adpl);
+                        choosec="Turkey";
                         break;
                     }
                     case 6: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("India"));
                         city.setAdapter(adpl);
+                        choosec="India";
                     }
                 }
             } //all asia
@@ -160,35 +195,42 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     case 0: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Togo"));
                         city.setAdapter(adpl);
+                        choosec="Togo";
                         break;
                     }
                     case 1: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Morocco"));
                         city.setAdapter(adpl);
+                        choosec="Morocco";
                         break;
                     }
                     case 2: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Cameroon"));
                         city.setAdapter(adpl);
+                        choosec="Cameroon";
                         break;
                     }
                     case 3: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Gabon"));
                         city.setAdapter(adpl);
+                        choosec="Gabon";
                     }
                     case 4: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Chad"));
                         city.setAdapter(adpl);
+                        choosec="Chad";
                         break;
                     }
                     case 5: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Ivory coast"));
                         city.setAdapter(adpl);
+                        choosec="Ivory coast";
                         break;
                     }
                     case 6: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Senegal"));
                         city.setAdapter(adpl);
+                        choosec="Senegal";
                     }
                 }
 
@@ -198,35 +240,42 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     case 0: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Poland"));
                         city.setAdapter(adpl);
+                        choosec="Poland";
                         break;
                     }
                     case 1: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Germany"));
                         city.setAdapter(adpl);
+                        choosec="Germany";
                         break;
                     }
                     case 2: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Italy"));
                         city.setAdapter(adpl);
+                        choosec="Italy";
                         break;
                     }
                     case 3: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Spain"));
                         city.setAdapter(adpl);
+                        choosec="Spain";
                     }
                     case 4: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("France"));
                         city.setAdapter(adpl);
+                        choosec="France";
                         break;
                     }
                     case 5: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Austria"));
                         city.setAdapter(adpl);
+                        choosec="Austria";
                         break;
                     }
                     case 6: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Sweden"));
                         city.setAdapter(adpl);
+                        choosec="Sweden";
                     }
                 }
             }//all europe
@@ -235,41 +284,49 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     case 0: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Argentina"));
                         city.setAdapter(adpl);
+                        choosec="Argentina";
                         break;
                     }
                     case 1: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Brazil"));
                         city.setAdapter(adpl);
+                        choosec="Brazil";
                         break;
                     }
                     case 2: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Canada"));
                         city.setAdapter(adpl);
+                        choosec="Canada";
                         break;
                     }
                     case 3: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Chile"));
                         city.setAdapter(adpl);
+                        choosec="Chile";
+                        break;
                     }
                     case 4: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Colombia"));
                         city.setAdapter(adpl);
+                        choosec="Colombia";
                         break;
                     }
                     case 5: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Mexico"));
                         city.setAdapter(adpl);
+                        choosec="Mexico";
                         break;
                     }
                     case 6: {
                         ArrayAdapter<String> adpl = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, cities.get("Peru"));
                         city.setAdapter(adpl);
+                        choosec="Peru";
                     }
 
                 }
             }
         }
-    }   // showing the city that fits the country in lv
+    }   // showing the cities that fits the country in lv
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
         Toast.makeText(getApplicationContext(), "choose continent and country please", Toast.LENGTH_SHORT);
